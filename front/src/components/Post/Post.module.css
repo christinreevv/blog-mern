@@ -1,0 +1,233 @@
+.root {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+}
+.root:hover {
+  border: 1px solid rgb(128, 0, 0);
+  box-shadow: 0 0 0 1px rgb(128, 0, 0);
+}
+.root:hover .editButtons {
+  opacity: 1;
+}
+.rootFull:hover {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  box-shadow: none;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imageFull {
+  min-height: 300px;
+  height: 100%;
+}
+
+.wrapper {
+  padding: 10px 20px 20px;
+}
+
+.content {
+  margin: 30px 0 50px;
+}
+.content p {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.indention {
+  padding-left: 40px;
+}
+
+.title {
+  font-size: 28px;
+  margin: 0;
+}
+.title a {
+  text-decoration: none;
+  color: #000;
+}
+.title a:hover {
+  color: rgb(128, 0, 0);
+}
+.titleFull {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.mainText {
+  font-size: 16px;
+}
+
+.fadedText {
+  opacity: 0.6;
+  margin: 0;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.mainText {
+  font-size: 16px;
+}
+
+.fadedText {
+  opacity: 0.6;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.views {
+  font-size: 14px;
+  color: #777;
+}
+
+.reactionContainer {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  top: -0.3em;
+  opacity: 0.8 !important;
+}
+
+.selectedReaction {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+}
+
+.reactionContainer:hover .selectedReaction {
+  transform: scale(1.2);
+}
+
+.reactionsPopup {
+  position: absolute;
+  left: 10em;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  z-index: 10;
+}
+
+.reaction {
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+.reaction:hover {
+  transform: scale(1.2);
+}
+
+.likeContainer {
+  opacity: 0.8 !important;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+.tags li {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 15px;
+  opacity: 0.5;
+}
+.tags li:hover {
+  opacity: 1;
+}
+.tags li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.postDetails {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+.postDetails li {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 20px;
+  opacity: 0.5;
+}
+.postDetails li svg {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.skeleton {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.skeletonContent {
+  padding: 20px;
+}
+.skeletonInfo {
+  margin-left: 50px;
+}
+
+.skeletonUser {
+  display: flex;
+}
+.skeletonUserDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeletonTags {
+  display: flex;
+}
+.skeletonTags span {
+  margin-right: 15px;
+}
+
+.editButtons {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}/*# sourceMappingURL=Post.module.css.map */

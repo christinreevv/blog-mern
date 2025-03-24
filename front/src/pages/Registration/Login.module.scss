@@ -1,0 +1,27 @@
+.root {
+  width: 400px;
+  padding: 50px;
+  border: 2px solid rgb(128, 0, 0); 
+  border-radius: 10px; 
+  margin: 50px auto;
+  background: white;
+}
+
+.field {
+  margin-bottom: 20px !important;
+}
+
+.title {
+  text-align: center !important;
+  font-weight: bold !important;
+  margin-bottom: 30px !important;
+  padding-bottom: 5px; 
+  border-bottom: 1.5px solid rgb(128, 0, 0); 
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+

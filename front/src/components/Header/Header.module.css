@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.root {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  transition: text-shadow 0.7s ease-in-out;
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 140%;
+  font-family: "Inter", serif;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #6d0000, #c40000, #ff3b3b, #c40000, #6d0000);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 5s infinite linear;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.logo:hover {
+  text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.8);
+}
+
+.buttons button {
+  margin-left: 10px;
+}
+.buttons a {
+  text-decoration: none;
+}
+
+.navButtons {
+  width: 80%;
+}/*# sourceMappingURL=Header.module.css.map */
